@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Birthday Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student Birthday Reminder</h1>
+
+  <section class="form-section">
+    <h2>Add Student</h2>
+    <form id="student-form">
+      <div class="form-control">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form-control">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+      </div>
+      <button type="submit">Add Student</button>
+    </form>
+  </section>
+
+  <section class="list-section">
+    <h2>Student List</h2>
+    <table id="student-table">
+      <thead>
+        <tr>
+          <th>Sl. No</th>
+          <th>Name</th>
+          <th>Date of Birth</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
